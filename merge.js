@@ -22,8 +22,8 @@ function merge(arr1, arr2) { //recursive solution
     return arr1;
 
   if (arr1[0] <= arr2[0]) {
-     //If the first entry of arr1 is smaller, add that to the front of the array
-     //along with the merge of the remainder of the arr1 with arr2
+    //If the first entry of arr1 is smaller, add that to the front of the array
+    //along with the merge of the remainder of the arr1 with arr2
     return [arr1[0]].concat(merge(arr1.splice(1, arr1.length - 1), arr2));
   } else {
     //same logic as previous merge, but switching arr1 with arr2. Note the order of calling
